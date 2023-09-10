@@ -10,8 +10,8 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link rel="stylesheet" href="./styles.css" />
-    <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/index.js"></script>
   </head>
   <body>
     <!-- Обертка для центрирования инпута и кнопки -->
@@ -30,6 +30,10 @@
 
     <!-- Контейнер для отображения результатов поиска -->
     <div class="results-container" id="results-container"></div>
+    <!-- Вставьте этот элемент в ваш HTML -->
+    <div class="notification" id="end-message" hidden>
+      We're sorry, but you've reached the end of search results.
+    </div>
 
     <!-- Кнопка "Load more" -->
     <button type="button" class="load-more" id="load-more">Load more</button>

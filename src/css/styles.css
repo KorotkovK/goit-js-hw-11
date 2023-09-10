@@ -1,0 +1,115 @@
+/* Стили для обертки поиска */
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(0, 123, 255, 0.8); /* Голубой фон с прозрачностью */
+  padding: 10px; /* Отступы вокруг инпута и кнопки */
+  border-radius: 8px;
+}
+
+/* Стили для инпута поиска */
+.search-form input[type='text'] {
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #fff; /* Белая рамка при активации инпута */
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.8); /* Белый фон с прозрачностью */
+  color: #000; /* Черный текст */
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Стили для кнопки "Search" */
+.search-form button[type='submit'] {
+  background-color: rgba(0, 123, 255, 0.8); /* Голубой фон с прозрачностью */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Стили при наведении на кнопку "Search" */
+.search-form button[type='submit']:hover {
+  background-color: rgba(
+    0,
+    86,
+    179,
+    0.8
+  ); /* Голубой фон с прозрачностью при наведении */
+}
+
+/* Стили для кнопки "Load more" */
+.load-more {
+  display: block;
+  margin: 20px auto; /* Центрирование кнопки */
+  padding: 8px 16px;
+  background-color: rgba(0, 123, 255, 0.8); /* Голубой фон с прозрачностью */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Стили при наведении на кнопку "Load more" */
+.load-more:hover {
+  background-color: rgba(
+    0,
+    86,
+    179,
+    0.8
+  ); /* Голубой фон с прозрачностью при наведении */
+}
+
+/* Стили для контейнера с изображениями */
+.results-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* Стили для карточки изображения */
+.photo-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out; /* Анимация при наведении */
+}
+
+/* Стили при наведении на карточку изображения */
+.photo-card:hover {
+  transform: scale(1.02);
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Стили для информации о изображении */
+.photo-card .info {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.photo-card .info-item {
+  margin: 4px 0;
+}
+
+/* Стили для уведомления */
+.notification {
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(0, 123, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+  color: #fff;
+}
